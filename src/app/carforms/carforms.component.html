@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Chào mừng bạn đến với reactive form</h1>
+  <form [formGroup]="manamentCarForm">
+    <input type="text" formControlName="code" placeholder="Nhập mã số xe" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.code.invalid">*Cần phải nhập mã số xe</span>
+    <br>
+    <input type="text" formControlName="gender" placeholder="Nhập giới tính" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.gender.invalid">*Cần phải nhập giới tính</span>
+    <br>
+    <input type="text" formControlName="firstName" placeholder="Nhập tên" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.firstName.invalid">*Cần phải nhập tên</span>
+    <br>
+    <input type="text" formControlName="lastName" placeholder="Nhập họ" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.lastName.invalid">*Cần phải nhập họ</span>
+    <br>
+    <input type="text" formControlName="dob" placeholder="Nhập ngày sinh" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.dob.invalid">*Cần phải nhập ngày sinh</span>
+    <br>
+    <input type="text" formControlName="email" placeholder="Nhập Email" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.email.invalid">*Cần phải nhập Email</span>
+    <br>
+    <input type="text" formControlName="phone" placeholder="Nhập số điện thoại" required/>
+    <br>
+    <span class="check" *ngIf="manamentCarForm.controls.phone.invalid">*Cần phải nhập số điện thoại</span>
+    <br>
+    <button type="submit" class="btn btn-success" [disabled]="!manamentCarForm.valid" (click)="addList()">Thêm danh sách</button>
+
+    <button type="submit" class="btn btn-success" [disabled]="!manamentCarForm.valid" (click)="editList()">Lưu danh sách</button>
+  </form>
+
+</div>
+

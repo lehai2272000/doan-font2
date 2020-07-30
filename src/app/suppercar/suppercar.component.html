@@ -1,0 +1,32 @@
+<div>
+  <button (click)="addCar()">Thêm xe</button>
+  <br>
+  <table id="customer" style="border-collapse: collapse;">
+    <tr>
+      <th>ID</th>
+      <th>Mã Số xe</th>
+      <th>Giới tính</th>
+      <th>Tên</th>
+      <th>Họ</th>
+      <th>Ngày sinh</th>
+      <th>Gmail</th>
+      <th>Điện thoại</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let car of cars">
+      <td>{{ car?.id }}</td>
+      <td>{{ car?.code }}</td>
+      <td>{{ car?.gender }}</td>
+      <td>{{ car?.firstName }}</td>
+      <td>{{ car?.lastName }}</td>
+      <td>{{ car?.dob }}</td>
+      <td>{{ car?.email }}</td>
+      <td>{{ car?.phone }}</td>
+      <td>
+        <span style="cursor: pointer; color: red;" title="Nhấn vào để xóa" (click)="deleteCar(car.id)">Delete</span>
+        &nbsp;
+        <span style="cursor: pointer;" title="Nhấn vào để sửa" (click)="editCar(car.id)">Edit</span>
+      </td>
+    </tr>
+  </table>
+</div>

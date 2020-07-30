@@ -1,0 +1,103 @@
+{
+  "cars": [
+    {
+      "id": 2,
+      "code": "HD002",
+      "gender": "Nam",
+      "firstName": "Lương",
+      "lastName": "Nguyễn",
+      "dob": "1999/10/10",
+      "email": "ntl@gmail.com",
+      "phone": "0923039698",
+      "picture": ""
+    },
+    {
+      "code": "Mac003",
+      "gender": "Nam",
+      "firstName": "Hải",
+      "lastName": "Lí",
+      "dob": "22/2/1999",
+      "email": "tranle@gmail.com",
+      "phone": "0987654321",
+      "id": 3
+    },
+    {
+      "code": "HD0098",
+      "gender": "Nữ",
+      "firstName": "Loan",
+      "lastName": "Nguyễn",
+      "dob": "04/04/2004",
+      "email": "hongloan84@gmail.com",
+      "phone": "0987654321",
+      "id": 4
+    },
+    {
+      "code": "LB012",
+      "gender": "Nam",
+      "firstName": "Hiếu",
+      "lastName": "Lê",
+      "dob": "12/10/2002",
+      "email": "lengochieu@gmail.com",
+      "phone": "01234567890",
+      "id": 5
+    },
+    {
+      "code": "lkjkhgf",
+      "gender": "kjhbgtmklnjkhgu",
+      "firstName": "tkljkhgty",
+      "lastName": "uhiygutf",
+      "dob": "hgvf",
+      "email": "bhjgvtf",
+      "phone": "nkhbjgut",
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 2
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 3
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 4
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 5
+    },
+    {
+      "title": "testing",
+      "author": "author testing",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment 2",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "Lê Ngọc Hải",
+    "yearOld": 20
+  }
+}
